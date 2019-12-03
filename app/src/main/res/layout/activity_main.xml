@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/left_fragment"
+        android:name="com.example.mywordsbook.LeftFragment"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_width="match_parent" />
+
+
+
+    <EditText
+        android:id="@+id/edit_eng_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:hint="请输入英文"
+        />
+
+    <EditText
+        android:id="@+id/edit_chn_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:hint="请输入中文"
+        />
+
+    <EditText
+        android:id="@+id/edit_sen_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:hint="请输入例句"
+        />
+
+    <Button
+        android:id="@+id/select_chn_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="按中文查询"
+        />
+    <Button
+        android:id="@+id/select_eng_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="按英文查询"
+        />
+    <Button
+        android:id="@+id/new_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="新建单词"
+        />
+    <Button
+        android:id="@+id/fuzzy_que_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="模糊查询"
+        />
+    <Button
+        android:id="@+id/edit_word_button"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="修改单词"
+        />
+<!--    <Button-->
+<!--        android:id="@+id/cre_btn"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:text="建库"-->
+<!--        />-->
+
+
+</LinearLayout>
